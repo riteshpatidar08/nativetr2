@@ -3,6 +3,7 @@ import React from 'react'
 import TabNavigator from './TabNavigator'
 import Settings from './screens/Settings'
 import DetailsScreen from './screens/DetailsScreen'
+import ImagePick from './screens/ImagePick'
 function DrawerNavigator() {
     const Drawer = createDrawerNavigator()
   return (
@@ -10,7 +11,7 @@ function DrawerNavigator() {
         <Drawer.Screen name="Tab" component={TabNavigator} />
         <Drawer.Screen name="Settings" component={Settings} />
 <Drawer.Screen name="Details" component={DetailsScreen}/>
-       
+       <Drawer.Screen name="Image" component={ImagePick}/>
     </Drawer.Navigator>
   )
 }

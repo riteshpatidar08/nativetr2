@@ -1,5 +1,7 @@
 import React from 'react'
-import {View , Text ,Button} from 'react-native'
+import {View , Text ,Button} from 'react-native' ;
+
+
 function DetailsScreen({route ,navigation}) {
     const {itemDescription , itemName} = route.params
   return (
