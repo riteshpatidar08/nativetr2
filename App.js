@@ -7,13 +7,14 @@ import * as React from 'react';
 import { Card } from 'react-native-paper';
 import { NavigationContainer } from '@react-navigation/native';
 import TabNavigator from './src/TabNavigator';
+import DrawerNavigator from './src/DrawerNavigator';
 function App() {
  
   console.log(StatusBar.currentHeight);
   return (
     <SafeAreaProvider style={{ flex: 1 }}>
     <NavigationContainer>
-      <TabNavigator/>
+     <DrawerNavigator/>
     </NavigationContainer>
       <ExpoStatusBar translucent={true}  />
     </SafeAreaProvider>

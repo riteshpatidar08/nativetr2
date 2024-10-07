@@ -20,12 +20,12 @@ function TabNavigator() {
             iconName = focused ? 'search' : 'search-outline';
           }
 
-          return <Ionicons name={iconName} size={size} color={color} />;
+          return <Ionicons name={iconName} size={20} color={color} />;
         },
         tabBarActiveTintColor: 'tomato',
         tabBarInactiveTintColor: 'gray',
         tabBarLabelStyle: {
-          marginBottom: 10,
+          marginBottom: 5,
         },
       })}
     >
@@ -37,3 +37,6 @@ function TabNavigator() {
 }
 
 export default TabNavigator;
+
+
+// npm i expo@latest 
