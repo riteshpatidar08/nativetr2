@@ -10,7 +10,7 @@ function App() {
   console.log(StatusBar.currentHeight);
   return (
     <SafeAreaProvider style={{ flex: 1 }}>
-     
+     <Text>Hello</Text>
       <ExpoStatusBar translucent={true}  />
     </SafeAreaProvider>
   );
