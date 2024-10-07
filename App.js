@@ -4,19 +4,14 @@ import { StatusBar as ExpoStatusBar } from 'expo-status-bar';
 import { Searchbar } from 'react-native-paper';
 import { StatusBar } from 'react-native';
 import * as React from 'react';
+import { Card } from 'react-native-paper';
 function App() {
-     const [searchQuery, setSearchQuery] = React.useState('');
-console.log(StatusBar.currentHeight)
+ 
+  console.log(StatusBar.currentHeight);
   return (
-    <SafeAreaProvider style={{flex:1}}>
-      <View style={{marginTop:StatusBar.currentHeight, padding:20 ,backgroundColor:'maroon' ,height:150 , justifyContent:'center'}}>
-        <Searchbar
-      placeholder="Search"
-      onChangeText={setSearchQuery}
-      value={searchQuery}
-    />
-      </View>
-      <ExpoStatusBar  translucent={true} backgroundColor='maroon' />
+    <SafeAreaProvider style={{ flex: 1 }}>
+     
+      <ExpoStatusBar translucent={true}  />
     </SafeAreaProvider>
   );
 }
