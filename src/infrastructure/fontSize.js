@@ -1,0 +1,1 @@
+export const Size = ['10px','12px','14px','20px','50px']
